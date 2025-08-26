@@ -29,11 +29,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
+  padding: 15px 20px;
+  position: relative;
 }
 
 header .logo {
-  font-size: 1.7rem;
+  font-family: 'Montserrat', sans-serif;;
+  font-size: 1.6rem;
   font-weight: bold;
 }
 
@@ -53,10 +55,22 @@ header nav ul li a {
 header nav ul li a:hover {
   color: var(--gris-claro);
 }
+/* Botón menú móvil */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
 main {
   padding: 60px 40px;
   text-align: center;
 }
+main h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
 
 main h2 {
   font-size: 2.2rem;
@@ -65,9 +79,6 @@ main h2 {
 main p{
     font-size: 1.2em;
 }
-
-
-
 /* Footer */
 footer {
   background-color: var(--azul-marino);
@@ -77,6 +88,34 @@ footer {
   margin-top: 40px;
   font-size: 0.9rem;
 }
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  header nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: var(--azul-marino);
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav.active {
+    display: block;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 15px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
 .video-container{
     max-width: 800px;
     margin: 0 auto;
