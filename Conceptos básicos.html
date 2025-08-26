@@ -9,7 +9,7 @@
 <body>
 <header>
 <div class="logo">Finanzas E Inversiones</div>
-<nav>
+<nav class="nav">
 	<ul>
 		<li><a href="index.html">Inicio</a></li>
 		<li><a href="Opciones de Inversión.html">Opciones de Inversión</a></li>
@@ -18,6 +18,9 @@
 		<li><a href="Contacto.html">Contacto</a></li>
 	</ul>
 </nav>
+<div class="menu-toggle" id="menu-toggle">
+      ☰
+    </div>
 </header>
 
 <main>
@@ -34,5 +37,13 @@
 <footer>
 <p>© 2025 Derechos reservados | Finanzas e Inversiones.</p>
 </footer>
+<script>
+    // Script para abrir/cerrar menú en móviles
+    const toggle = document.getElementById("menu-toggle");
+    const nav = document.querySelector(".nav");
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+  </script>
 </body>
 </html>
