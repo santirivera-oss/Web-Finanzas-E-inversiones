@@ -4,6 +4,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale1">
 <title>Bienvenido</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -21,17 +24,137 @@
 </header>
 
 <main>
-<h2>Opciones de Inversión</h2>
-<p>Pagina de Opciones de Inversión</p>
 
-<table>
-    <thead>
-        <tr>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
+<!-- Hero Section -->
+<section class="bg-gradient-to-r from-purple-700 to-indigo-800 text-white text-center py-20">
+<h1 class="text-4xl md:text-5xl font-bold mb-4">Descubre las mejores opciones para hacer crecer tu dinero</h1>
+<p class="text-lg mb-6">Explora inversiones seguras, modernas y diversificadas, adaptadas a tu perfil.</p>
+<a href="#inversiones" class="bg-white text-indigo-800 px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-gray-200 transition">Empieza ahora</a>
+</section>
+	
+
+<!-- Inversiones Tradicionales -->
+<section id="inversiones" class="py-16 max-w-6xl mx-auto px-6">
+<h2 class="text-3xl font-bold text-center mb-10">Inversiones Tradicionales</h2>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+<div class="text-4xl mb-4">🏢</div>
+<h3 class="text-xl font-semibold mb-2">Bienes Raíces</h3>
+<p>Estabilidad, ingresos pasivos y plusvalía a largo plazo.</p>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+<div class="text-4xl mb-4">📈</div>
+<h3 class="text-xl font-semibold mb-2">Acciones en Bolsa</h3>
+<p>Participa en empresas y gana con su crecimiento.</p>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+<div class="text-4xl mb-4">💵</div>
+<h3 class="text-xl font-semibold mb-2">Bonos y CETES</h3>
+<p>Seguridad y rendimiento fijo con bajo riesgo.</p>
+</div>
+</div>
+</section>
+
+ <!-- Inversiones Modernas -->
+<section class="py-16 max-w-5xl mx-auto px-6">
+<thead class="bg-indigo-600 text-white">
+<tr>
+<th class="px-4 py-2">Opción</th>
+<th class="px-4 py-2">Riesgo</th>
+<th class="px-4 py-2">Rentabilidad</th>
+<th class="px-4 py-2">Tiempo</th>
+<th class="px-4 py-2">Liquidez</th>
+</tr>
+</thead>
+<tbody>
+<tr class="border-t">
+<td class="px-4 py-2">CETES / Bonos</td>
+<td class="px-4 py-2 text-blue-500 font-bold">Bajo</td>
+<td class="px-4 py-2">4-8% anual</td>
+<td class="px-4 py-2">1-3 años</td>
+<td class="px-4 py-2">Alta</td>
+</tr>
+<tr class="border-t">
+<td class="px-4 py-2">Acciones</td>
+<td class="px-4 py-2 text-yellow-500 font-bold">Medio</td>
+<td class="px-4 py-2">10-15% anual</td>
+<td class="px-4 py-2">3-5 años</td>
+<td class="px-4 py-2">Media</td>
+</tr>
+<tr class="border-t">
+<td class="px-4 py-2">Criptomonedas</td>
+<td class="px-4 py-2 text-red-500 font-bold">Alto</td>
+<td class="px-4 py-2">20-50% anual</td>
+<td class="px-4 py-2">1-5 años</td>
+<td class="px-4 py-2">Alta</td>
+</tr>
+<tr class="border-t">
+<td class="px-4 py-2">Bienes Raíces</td>
+<td class="px-4 py-2 text-yellow-500 font-bold">Medio</td>
+<td class="px-4 py-2">8-12% anual</td>
+<td class="px-4 py-2">5-10 años</td>
+<td class="px-4 py-2">Baja</td>
+</tr>
+</tbody>
 </table>
+</div>
+</section>
+
+
+ <!-- Comparador de Opciones -->
+  <section class="py-16 max-w-5xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">Comparador de Opciones</h2>
+    <div class="overflow-x-auto">
+      <table class="table-auto w-full border border-gray-300 text-center bg-white rounded-lg shadow">
+        <thead class="bg-indigo-600 text-white">
+          <tr>
+            <th class="px-4 py-2">Opción</th>
+            <th class="px-4 py-2">Riesgo</th>
+            <th class="px-4 py-2">Rentabilidad</th>
+            <th class="px-4 py-2">Tiempo</th>
+            <th class="px-4 py-2">Liquidez</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-t">
+            <td class="px-4 py-2">CETES / Bonos</td>
+            <td class="px-4 py-2 text-blue-500 font-bold">Bajo</td>
+            <td class="px-4 py-2">4-8% anual</td>
+            <td class="px-4 py-2">1-3 años</td>
+            <td class="px-4 py-2">Alta</td>
+          </tr>
+          <tr class="border-t">
+            <td class="px-4 py-2">Acciones</td>
+            <td class="px-4 py-2 text-yellow-500 font-bold">Medio</td>
+            <td class="px-4 py-2">10-15% anual</td>
+            <td class="px-4 py-2">3-5 años</td>
+            <td class="px-4 py-2">Media</td>
+          </tr>
+          <tr class="border-t">
+            <td class="px-4 py-2">Criptomonedas</td>
+            <td class="px-4 py-2 text-red-500 font-bold">Alto</td>
+            <td class="px-4 py-2">20-50% anual</td>
+            <td class="px-4 py-2">1-5 años</td>
+            <td class="px-4 py-2">Alta</td>
+          </tr>
+          <tr class="border-t">
+            <td class="px-4 py-2">Bienes Raíces</td>
+            <td class="px-4 py-2 text-yellow-500 font-bold">Medio</td>
+            <td class="px-4 py-2">8-12% anual</td>
+            <td class="px-4 py-2">5-10 años</td>
+            <td class="px-4 py-2">Baja</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="bg-indigo-800 text-white text-center py-16">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6">Convierte tus ahorros en oportunidades reales</h2>
+    <p class="mb-8">Empieza hoy a invertir de manera inteligente y alcanza tus metas financieras.</p>
+    <a href="#" class="bg-white text-indigo-800 px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-gray-200 transition">Quiero empezar a invertir</a>
+  </section>
 
 
 </main>
