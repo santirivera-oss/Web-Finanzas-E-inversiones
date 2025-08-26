@@ -85,6 +85,7 @@ main p {
   font-size: 1.05rem;
   color: #333;
   text-align: justify;
+  text-indent: 30px;
 }
 /* Parrafo destacado */
 .parrafo-destacado {
@@ -138,6 +139,32 @@ main p {
   line-height: 1.7;       /* más aire entre líneas */
   font-size: 1.05rem;     /* tamaño un poco mayor */
   color: #333;            /* tono gris oscuro, más amigable que negro puro */
+
+}
+.hero-img .overlay p {
+  color: white;
+  font-size: normal;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.text-lg mb-6{
+  color: white;
+  font-size: normal;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+main img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #001f3f;
+  box-shadow: 0 4px 8px rgb(0, 0, 0, 0.3);
+} 
+main img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  box-shadow: 0 8px 16px rgba(rgb(0, 0, 0, 0.4));
 }
 .video-container{
     max-width: 800px;
@@ -319,3 +346,57 @@ ul.checklist li::before {
   text-align: center;
   border-radius: 0 0 8px 8px;
 }
+/* --- Conceptos Básicos --- */
+.conceptos {
+  padding: 60px 20px;
+  background-color: var(--gris-claro);
+  text-align: center;
+}
+
+.conceptos h2 {
+  font-size: 2rem;
+  color: var(--azul-marino);
+  margin-bottom: 40px;
+}
+
+.conceptos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.concepto-card {
+  background-color: var(--blanco);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.concepto-card:hover {
+  transform: translateY(-5px);
+}
+
+.concepto-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: var(--azul-marino);
+}
+
+.concepto-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--gris-oscuro);
+}
+/* Iconos en conceptos */
+.concepto-card .icono {
+  font-size: 2.2rem;
+  color: var(--azul-marino);
+  margin-bottom: 15px;
+  display: block;
+  text-align: center;
+}
+
