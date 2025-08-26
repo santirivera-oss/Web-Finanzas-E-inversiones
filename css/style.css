@@ -1,0 +1,113 @@
+body{
+    font-family: Arial,sans-serif;
+    background-image: url('https://www.shutterstock.com/image-vector/gray-white-abstract-background-modern-600nw-2618382055.jpghttps://img.freepik.com/fotos-premium/lineas-blancas-abstractas-fondo-gris-espacio-copia_1174990-201389.jpg?semt=ais_hybrid&w=740&q=80');
+    color: #333;
+    margin: 0;
+}
+header {
+    background-color: rgb(45, 122, 229);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    text-align: center;
+}
+header h1{
+    margin: 0;
+    font-size: 2.5em;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+nav ul li a:hover{
+    color: rgb(137, 222, 251);
+}
+main{
+    padding: 20px;
+    text-align: center;
+}
+main h2{
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    margin-top: 0;
+}
+main p{
+    font-size: 1.2em;
+}
+footer{
+    background-color: rgb(45, 122, 229);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 4px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.video-container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(rgb(0, 0, 0, 0.1));
+    border-radius: 10px;
+    text-align: center;
+}
+
+.video-container{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid rgb(#00aaff);
+}
+
+form{
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: Arial,sans-serif;
+}
+
+label{
+    display: block;
+    margin: 5px;
+    font-weight: bold;
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(#00aaff);
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: rgb(46, 177, 221);
+    color: white;
+    border: none;
+    padding: 10px 13px;
+    cursor: pointer;
+}
+.boton-flotante{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50px;
+    box-shadow: 1px 1px 1px white;
+    z-index: 100;
+}
+.boton-flotante img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
